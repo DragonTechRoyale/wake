@@ -11,15 +11,15 @@ def main():
 	music_path = str(Path(__file__).parent.resolve())  + "/music"
 	wake_hour = "05"
 	wake_minute = "00"
-	temp = input("Enter wake hour in the two number format (ex: 05 for 5AM) or press enter for default hour (5AM): ")
+	temp = str(input("Enter wake hour in the two number format (ex: 05 for 5AM) or press enter for default hour (5AM): "))
 	if temp != '':
 		wake_hour = temp
   
-	temp = input("Enter wake minute in the two number format (ex: 05 for 5 minutes) or press enter for default minute (00): ")
+	temp = str(input("Enter wake minute in the two number format (ex: 05 for 5 minutes) or press enter for default minute (00): "))
 	if temp != '':
 		wake_minute = temp
 
-	temp = input("Specify the path of the folder with the music files) or press enter for default path (./music): ")
+	temp = str(input("Specify the path of the folder with the music files) or press enter for default path (./music): "))
 	if  temp != '':
 		music_path = temp
 		print("1")
